@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/quotation-styling.css" rel="stylesheet">
+    <title>Quotation Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<button class="pdfBtn" id="saveImageBtn">Export PDF</button>
+<div class="container" id="quotation">
+    <div class="header-grid">
+    <div class="header-left">
+        Your Company Name
+        <div class="sub-header-left">
+            Your Company Slogan
+        </div>
+    </div>
+    <div class="header-right">
+        Quotation    
+    </div>
+    </div>
+    <div class="info-grid">
+        <div>
+            Street Address<br>
+            City, ST ZIP Code<br>
+            Phone<br>
+            Fax
+        </div>
+        <div class="right-align" id="quotation-1">
+            <b>DATE</b> <br>
+            <b>Quotation #</b> <br>
+            <b>Customer ID</b>
+        </div>
+        <div>
+            <b>Bill To:</b><br>
+            Name<br>
+            Company Name<br>
+            Street Address<br>
+            City, ST ZIP Code<br>
+            Phone
+        </div>
+        <div class="right-align">
+            <i>Quotation valid until:</i> <br>
+            <i>Prepared by:</i>
+        </div>
+    </div>
+    <div><b>Comments or special instructions:</b></div>
+    <div class="quotation-grid">
+        <div class="grid-header">Description</div>
+        <div class="grid-header">AMOUNT</div>
+        <div class="description-cell"></div>
+        <div class="amount-cell"></div>
+        <div class="total-cell-left"><b>TOTAL</b></div>
+        <div class="total-cell-right">$-</div>
+    </div>
+    <div class="footer-text">
+        If you have any questions concerning this quotation, contact Name, Phone Number, E-mail
+    </div>
+    <div class="footer">
+        THANK YOU FOR YOUR BUSINESS!
+    </div>
+</div>
+<script src="js/sketch.js"></script>
+</body>
+</html>
